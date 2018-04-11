@@ -8,7 +8,9 @@
     "url": "git+https://github.com/scotch-io/node-booklet-code.git"
   },
   "dependencies": {
+    "compression": "^1.7.2",
     "express": "^4.16.2",
+    "helmet": "^3.12.0",
     "mongoose": "latest"
   },
   "author": "Avichay Zana",

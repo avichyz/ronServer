@@ -1,3 +1,6 @@
+var compression = require('compression');
+var helmet = require('helmet');
+
 // grab express
 const express = require('express'),
   app = express(),
@@ -7,6 +10,9 @@ const express = require('express'),
   User = require('./models/userModel'), //created model loading here
   Order = require('./models/orderModel'), //created model loading here
   bodyParser = require('body-parser');
+
+app.use(helmet());
+app.use(compression()); //Compress all routes
 
 // const bodyParser = require('body-parser');
 // const mongoose = require('mongoose');
