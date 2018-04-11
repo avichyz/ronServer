@@ -19,6 +19,8 @@ app.use(compression()); //Compress all routes
 mongoose.Promise = require('bluebird');
 mongoose.connect('mongodb://admin:221189@ds117858.mlab.com:17858/ron_furnitures'); 
 
+// process.env.MONGODB_URI || 
+
 // catch random errors
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
